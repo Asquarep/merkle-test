@@ -14,5 +14,5 @@ const leaf2 = SHA256('0x742d35Cc6634C05329253a844Bc454e4438f44v')
 const proof = tree.getProof(leaf)
 const proof2 = tree.getProof(leaf2)
 console.log("leaf 1 verification: ", tree.verify(proof, leaf, root)) // true
-console.log("leaf 2 verification:", tree.verify(proof, leaf2, root)) // false
+console.log("leaf 2 verification:", tree.verify(proof2, leaf2, root)) // false
 
